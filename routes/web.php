@@ -31,7 +31,3 @@ Route::get('/pages/{id}/{slug}', [PagesController::class, 'show'])
 
 
 //ROUTE ADMIN
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
